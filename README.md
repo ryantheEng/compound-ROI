@@ -14,10 +14,10 @@ We first queried the *compound market stats* table for the APYs and COMP speeds 
 https://velocity-app.flipsidecrypto.com/velocity/visuals/6d81ccc0-49f6-47a7-9544-d11f0f19f097/0f0ebfaa-31ed-486f-9866-19de92de1903
 (Average supply APY)
 
-![Average COMP speed (USD)](/outputs/average_comp.png)
+![Average COMP APY](/outputs/average_comp.png)
 
 https://velocity-app.flipsidecrypto.com/velocity/visuals/7bfbccfd-3c45-472a-9163-6600251147ff/0f0ebfaa-31ed-486f-9866-19de92de1903
-(Average COMP speed in USD value)
+(Average COMP APY)
 
 Using these values, we calculated the average interest of the 30 day period per market, as well as the comp supply APY.
 
