@@ -26,38 +26,38 @@ def reindex(datasets:list):
         dataset.reset_index(drop=True,inplace=True)
     return datasets
 
-def averageCOMP(comp:pd.Series,blocks:pd.Series):
-    avgCOMP = []
-    if len(blocks) < len(comp):
-        if len(comp)-len(blocks) > 1:
-            del comp[0:len(comp)-len(blocks)]
-        else:
-            del comp[0]
-        comp.reset_index(drop=True,inplace=True)
-    elif len(blocks) > len(comp):
-        if len(blocks)-len(comp) > 1:
-            del blocks[0:len(blocks)-len(comp)]
-        else:
-            del blocks[0]
-    blocks.reset_index(drop=True,inplace=True)
-    for index, val in blocks.iteritems():
-        x = comp[index]*val/comp_users #comp * blocks / users
-        if x > 100000000:
-            x = 0
-        else:
-            avgCOMP.append(comp[index]/val)
-    return avgCOMP
+# def averageCOMP(comp:pd.Series,blocks:pd.Series):
+#     avgCOMP = []
+#     if len(blocks) < len(comp):
+#         if len(comp)-len(blocks) > 1:
+#             del comp[0:len(comp)-len(blocks)]
+#         else:
+#             del comp[0]
+#         comp.reset_index(drop=True,inplace=True)
+#     elif len(blocks) > len(comp):
+#         if len(blocks)-len(comp) > 1:
+#             del blocks[0:len(blocks)-len(comp)]
+#         else:
+#             del blocks[0]
+#     blocks.reset_index(drop=True,inplace=True)
+#     for index, val in blocks.iteritems():
+#         x = comp[index]*val/comp_users #comp * blocks / users
+#         if x > 100000000:
+#             x = 0
+#         else:
+#             avgCOMP.append(comp[index]/val)
+#     return avgCOMP
 
-def cOMPS(list_interests,list_txs):
-    i=0
-    tmp = []
-    avgcomp = []
-    while i < len(list_txs):
-        tmp.append(averageCOMP(list_interests[i]['COMP'],list_txs[i]['BLOCKS']))
-        avgcomp.append((tmp))
-        tmp = []
-        i+=1
-    return avgcomp
+# def cOMPS(list_interests,list_txs):
+#     i=0
+#     tmp = []
+#     avgcomp = []
+#     while i < len(list_txs):
+#         tmp.append(averageCOMP(list_interests[i]['COMP'],list_txs[i]['BLOCKS']))
+#         avgcomp.append((tmp))
+#         tmp = []
+#         i+=1
+#     return avgcomp
 
 # def plotone(title:str,series:pd.Series):
 #     plt.plot(np.arange(0,len(series),1),series)

@@ -19,19 +19,12 @@ del list_txs[8]
 list_txs.insert(6,list_txs[3])
 del list_txs[3]
 
-avgcomps = utils.cOMPS(list_interests,list_txs)
-
 symbols = []
-for i in list_interests:
-    symbols.append(i['SYMBOL'][0])
-    # print(i['SYMBOL'][0])
-    comp_interest = []
-for i in avgcomps:
-    # print('31 Day Average COMP for different markets {:.4f}'.format(utils.np.mean(i)))
-    comp_interest.append(utils.np.mean(i))
+comp_interest = []
 apys = []
 for i in list_interests:
-    # print('31 Day Average APY for different markets {:.4f}'.format(i['APY'].mean()))
+    symbols.append(i['SYMBOL'][0])
+    comp_interest.append(i['COMP'].mean())
     apys.append(i['APY'].mean())
 ####
 
@@ -47,7 +40,7 @@ def loop():
     market = int(input('Choose your market by entering the associated number:'))
     time = int(input('Enter the amount of days you would like to leave your supply:'))
 
-    x = collateral * apys[market] * time/365 + time * comp_interest[market]
+    x = collateral * time/365 * (apys[market] + comp_interest[market])
     print('You can expect to see an ROI of {:.2f}'.format(x/collateral*100))
 
 while(1):
