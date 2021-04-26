@@ -8,7 +8,7 @@ Put together by @ryanl and @MonetCapital
 This Github page focuses on understanding the ROI of Compounds different markets. Of the different markets, which ones are the most advantageous?
 
 ### Getting the Data
-We first queried the *compound market stats* table for the APYs and COMP speeds of the different markets. This resulted in the following graphs.
+We first queried the *compound market stats* table for the supplier APYs and COMP speeds of the different markets, averaged and grouped by day and symbol. This resulted in the following graphs which show supply APY and COMP APY grouped by market with respect to time.
 
 ![Supply](/outputs/apy-line.png)
 
@@ -20,10 +20,8 @@ https://velocity-app.flipsidecrypto.com/velocity/visuals/6d81ccc0-49f6-47a7-9544
 https://velocity-app.flipsidecrypto.com/velocity/visuals/7bfbccfd-3c45-472a-9163-6600251147ff/0f0ebfaa-31ed-486f-9866-19de92de1903
 (Average COMP APY)
 
-Using these values, we calculated the average interest of the 30 day period per market, as well as the comp supply APY.
-
 ### Priming the Data
-See the 31 day average APYs and COMP value accrued/day in the following output:
+Using these values, we calculated the average interest of the 30 day period per market, as well as the comp supply APY. See the 31 day average APYs and COMP value accrued/day in the following output:
 
 ![Average APY and COMP](/outputs/market_interests.png)
 
@@ -38,6 +36,8 @@ Using this data, we are able to calculate a theoretical ROI for a month, and for
 
 ![ROI Year](/outputs/roi_year.png)
 
-### Conclusion
+### Conclusion and Application
 Seen from the above graphs and outputs, the stablecoins such as DAI, USDT and USDC have the most upside to them. In comparison, WETH and WBTC have lower APYs and therefore will have lower ROIs. This is partly due to the fact that there isn't a demand to borrow appreciating assets (such as BTC and ETH). 
-Running calculator.py will also allow you to choose different combinations of collateral and time in market! *Just be careful, you will need to have Python, numpy and pandas modules installed!*
+
+#### A Calculator!
+Running the calculator.py script will also allow you to choose different combinations of collateral and time in market! *Just be careful, you will need to have Python, numpy and pandas modules installed!*
