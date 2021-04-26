@@ -40,8 +40,9 @@ def loop():
     market = int(input('Choose your market by entering the associated number:'))
     time = int(input('Enter the amount of days you would like to leave your supply:'))
 
-    x = collateral * time/365 * (apys[market] + comp_interest[market])
-    print('You can expect to see an ROI of {:.2f}'.format(x/collateral*100))
+    x = collateral * time/365 * (apys[market]/100 + comp_interest[market]/100)
+    y = (x/collateral*100)
+    print('You can expect to see an ROI of {:.2f} or ${:.2f} USD'.format(y,x))
 
 while(1):
     loop()
