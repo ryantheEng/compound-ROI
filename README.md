@@ -19,14 +19,9 @@ https://velocity-app.flipsidecrypto.com/velocity/visuals/6d81ccc0-49f6-47a7-9544
 https://velocity-app.flipsidecrypto.com/velocity/visuals/7bfbccfd-3c45-472a-9163-6600251147ff/0f0ebfaa-31ed-486f-9866-19de92de1903
 (Average COMP speed in USD value)
 
-Using these values, we calculated the average interest of the 30 day period per market, as well as the comp value accrual over 31 days. As stated in the 
-flipside table documentation, *COMP SPEED* is the rate at which COMP is distributed per block.
+Using these values, we calculated the average interest of the 30 day period per market, as well as the comp supply APY.
 
 ### Priming the Data
-To get the average COMP accrual rate/day, we first removed any irregularities in the data such as infinite or null values. We then multiplied the comp
-speed by the number of blocks during the specified time period (1 day). At this time, using Dune Analytic's community written query, I am able to see the amount
-of Compound users during the last 30 days is roughly ~ 300K. ([dune analytics link](https://duneanalytics.com/queries/1010/5530?fbclid=IwAR3TcBocoadY20EPwStW6LcG8PdecVd4Zo2TyyfUIPlm2tMfPM1QuyoKjtk))
-
 See the 31 day average APYs and COMP value accrued/day in the following output:
 
 ![Average APY and COMP](/outputs/market_interests.png)
