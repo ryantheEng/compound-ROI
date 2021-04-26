@@ -1,4 +1,4 @@
-# compound-ROI
+# Compound ROI Calculator
 
 Thank you @flipsidecrypto for the bounty opportunity.
 
