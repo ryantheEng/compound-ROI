@@ -9,12 +9,10 @@ Put together by @ryanl and @MonetCapital
 ### Getting the Data
 We first queried the *compound market stats* table for the APYs and COMP speeds of the different markets. This resulted in the following graphs.
 
-![Average supply APY](/outputs/apy.png)
+
 
 https://velocity-app.flipsidecrypto.com/velocity/visuals/6d81ccc0-49f6-47a7-9544-d11f0f19f097/0f0ebfaa-31ed-486f-9866-19de92de1903
 (Average supply APY)
-
-![Average COMP APY](/outputs/average_comp.png)
 
 https://velocity-app.flipsidecrypto.com/velocity/visuals/7bfbccfd-3c45-472a-9163-6600251147ff/0f0ebfaa-31ed-486f-9866-19de92de1903
 (Average COMP APY)
