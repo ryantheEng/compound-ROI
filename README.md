@@ -31,7 +31,7 @@ to their respective supplier APYs. From this, we can calculate the accrued value
 
 ![Value](/outputs/accrued_value.png)
 
-Using this data, we are able to calculate a theoretical ROI for a month, and for a year.
+Using this data, we are able to calculate a theoretical ROI for a month, and for a year. We can see from the above data that the value accrued from the stables is over 10x that of WBTC and WETH. 
 
 ![ROI Month](/outputs/roi_month.png)
 
