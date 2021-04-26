@@ -33,13 +33,13 @@ See the 31 day average APYs and COMP value accrued/day in the following output:
 
 From this, we can calculate the accrued value over the 31 day period with a 100K supply deposit in the respective markets.
 
-![Value](/outputs.accrued_value.png)
+![Value](/outputs/accrued_value.png)
 
 Using this data, we are able to calculate a theoretical ROI for a month, and for a year.
 
 ![ROI Month](/outputs/roi_month.png)
 
-![ROI Year](/outputs.roi_year.png)
+![ROI Year](/outputs/roi_year.png)
 
 ### Conclusion
 Seen from the above graphs and outputs, the stablecoins such as DAI, USDT and USDC have the most upside to them. In comparison, WETH and WBTC have lower APYs and therefore will have lower ROIs.
