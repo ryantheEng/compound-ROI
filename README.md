@@ -5,6 +5,7 @@ Thank you @flipsidecrypto for the bounty opportunity.
 Put together by @ryanl and @MonetCapital
 
 ## How much interest and COMP would you earn for a $100K supply over 30 days on each of the active markets?
+This Github page focuses on understanding the ROI of Compounds different markets. Of the different markets, which ones are the most advantageous?
 
 ### Getting the Data
 We first queried the *compound market stats* table for the APYs and COMP speeds of the different markets. This resulted in the following graphs.
@@ -38,5 +39,5 @@ Using this data, we are able to calculate a theoretical ROI for a month, and for
 ![ROI Year](/outputs/roi_year.png)
 
 ### Conclusion
-Seen from the above graphs and outputs, the stablecoins such as DAI, USDT and USDC have the most upside to them. In comparison, WETH and WBTC have lower APYs and therefore will have lower ROIs.
+Seen from the above graphs and outputs, the stablecoins such as DAI, USDT and USDC have the most upside to them. In comparison, WETH and WBTC have lower APYs and therefore will have lower ROIs. This is partly due to the fact that there isn't a demand to borrow appreciating assets (such as BTC and ETH). 
 Running calculator.py will also allow you to choose different combinations of collateral and time in market! *Just be careful, you will need to have Python, numpy and pandas modules installed!*
