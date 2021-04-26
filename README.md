@@ -4,7 +4,7 @@ Thank you @flipsidecrypto for the bounty opportunity.
 
 Put together by @ryanl and @MonetCapital
 
-#### How much interest and COMP would you earn for a $100K supply over 30 days on each of the active markets?
+## How much interest and COMP would you earn for a $100K supply over 30 days on each of the active markets?
 
 ### Getting the Data
 We first queried the *compound market stats* table for the APYs and COMP speeds of the different markets. This resulted in the following graphs.
