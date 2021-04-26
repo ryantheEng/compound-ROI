@@ -26,7 +26,8 @@ See the 31 day average APYs and COMP value accrued/day in the following output:
 
 ![Average APY and COMP](/outputs/market_interests.png)
 
-From this, we can calculate the accrued value over the 31 day period with a 100K supply deposit in the respective markets.
+Interesting note on the above data, that the stablecoins have lower COMP APYs and higher supplier APYs compared to ETH and BTC which have a larger COMP distribution APY compared
+to their respective supplier APYs. From this, we can calculate the accrued value over the 31 day period with a 100K supply deposit in the respective markets.
 
 ![Value](/outputs/accrued_value.png)
 
